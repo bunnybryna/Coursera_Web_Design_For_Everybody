@@ -1,0 +1,234 @@
+<!--Tags-->
+<!--block: h1-h6,p,div;inline:img...-->
+<!--alt attribute is important, show infor for screen readers or broken links
+title displays on hover-->
+<img src="myPic.jpg" alt="Image of Mine" title="An image" class="thumbnail"/>
+
+
+<!--semantics tags-->
+<!--header: to group introduction, navigation bar or title-->
+<!--head tag is for metadata, don't confuse them-->
+<header>
+    <h1>This is the Title</h1>
+    <h2>The author is Bryna</h2>
+</header>
+<!--nav help people navigate through your page
+often embedded inside the header tag
+group links that go to other parts of your site-->
+<nav>
+    <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#development">Development</a>
+    <ul>
+</nav>    
+
+<!--footer:at the bottom of the page,contains info 
+such as copyright, related documents and links to social media-->
+<footer>
+    &copy;2016 by Bryna Zhao<br>
+    <a href="http://www.intro-webdesign.com">Introduction to HTML</a>
+</footer>
+
+<!--mark:highlight the content-->
+<p>Here is a sentence with some <mark>highlighted</mark> text.</p>
+
+<!--figure tags more semantics than img
+can include caption and multiple multi-media resources-->
+<figure>
+    <img src="sunset.gif" alt="Ashtabula sunset">
+    <figcaption> A sunsest over Lake Erie. Taken in Ashtabula Ohio</figcaption>
+</figure>    
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>My First Page</title>
+</head>
+<body>
+    <main><p>This is my Main Code</p></main>
+    <footer><p>Think of a more interesting footer</P></footer>
+</body>
+
+<!--dl:A description list, with terms and descriptions-->
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+<!--Images-->
+<!--default image size-->
+<figure>
+    <img src="img/mypic.jpg"
+         alt="My House">
+    <figcaption>Default image size</figcapiton>
+</figure>
+<!--figure and img tas are not interchangable
+figure is a semantics way of grouping all things you need for an image together
+including figcapiton and img-->
+<figure>
+    <img src="img/mypic.jpg"
+         width="500px" height="100px" 
+         alt="My House">
+    <figcaption>Set image size<figcapiton>
+</figure>    
+<!--height is optional-->
+<!--hard code both width and height, try to avoid-->
+<!--relative to the browser-->
+<figure>
+    <img src="img/mypic.jpg"
+         width="50%"
+         alt="My House">
+    <figcaption>Relative image size<figcapiton>
+</figure>    
+
+<!--favicon:put img/logo next to the title of your page-->
+<head>
+    <link rel="icon" type="image/png" href="imgs/logo.png"/>
+</head>
+
+<!--alt attribute: provide a textual alt to non-text content
+provide semantics meanings for search engines
+be accurate, succinct, avoid "pic/graphic of"-->
+
+
+<!--hyperlinks-->
+<!--absolute reference-->
+<a href="http://www.intro-webdesign.com/">Web Design</a>
+<opening tag href=address>clickable text<closing tag>
+
+<!--relative reference:link to a local file in the same folder-->
+<a href="page2.html">Second Page</a>
+<!--or a local file in a different folder-->
+<a href="docs/page.html">Second Page</a>
+<!--link to a different location in the same file-->
+<a href="#history">History section</a>
+<!--clickable img-->
+<a href="http://www.redcross.org"><img src="imgs/redcross-logo.png" alt="Red Cross Logo"/></a>
+<a href="http://www.redcross.org"><img src="http://www.redcross.org/img/logo.png" alt="Red Cross Logo"/></a>
+
+<!--targets
+target="_self":default action, open the linked document in the same frame
+target="_blank":open in new tab or window
+target="_top"/"_parent"-->
+
+<!--multimedia-->
+<!--video 
+common attributes:height,width,autoplay,loop(repeat),controls(control play)-->
+<!--audio
+use src to link to audio file, typically mp3 or wav
+common attributes:autoplay, controls,loop, buffered,muted,volume
+.ext(means extention)#t=5,25(5-25 seconds)
+,39(beginning-39 sec)
+1:38:45
+42(from 42 to end)-->
+
+<h1>Video</h1>
+<video src="Boxcar.mov" width="400" autoplay(or control)>
+Your browser does not support the<code>video</code>elements.
+</video>
+<br>
+
+<h1>Audio</h1>
+<audio src="https://xxxxxx.ogg" controls>Tchikovsky 1812</audio>
+<audio src="https://xxxxxx.ogg#t=15:35" controls>
+Tchikovsky 1812 set to start at the exciting part</audio>
+
+
+<!--tables-->
+<!--draw a scratch before coding
+use th for headings and captions
+colspan/colspan attribute
+check for unclosed tags-->
+<table>
+    <tr><th>Row One</th><th>Row Two</th><th>Row Three</th></tr>
+    <tr><td>One</td><td>Two</td><td>Three</td></tr>
+    <tr><td>Four</td><td>Five</td><td>Six</td></tr>
+    <tr><td>Seven</td><td>Eight</td><td>Nine</td></tr>
+</table>
+
+<table border="1">
+    <tr>
+        <th>Child's Name: </th><th>Parent's Name: </th>
+    </tr>
+    <tr>
+        <td rowspan="2">Catherine</td><td>Michael McCarty</td>
+    </tr>
+    <tr>
+        <td>Colleen McCarty</td>
+    </tr>
+    <tr>
+        <td>Maggie</td><td>Sheila</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Edward</td><td>Catherin Howard</td>
+    </tr>
+    <tr>
+        <td>Jeff Howard</td>
+    </tr>
+</table>
+
+<!--useful tags-->
+<!--block tags:
+containers: put like-minded code together
+<article>,<aside>,<section>,<main>
+eg:http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_main-->
+<main>
+  <h1>Web Browsers</h1>
+  <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+  <article>
+    <h1>Google Chrome</h1>
+    <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+  </article>
+
+  <article>
+    <h1>Internet Explorer</h1>
+    <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+  </article>
+
+  <article>
+    <h1>Mozilla Firefox</h1>
+    <p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>
+  </article>
+</main>
+
+<!--
+<hr>:horizontal rule
+<address>:help viewer quickly find your address
+<blockquote>:a section that is quoted from another source, has cite attribute
+<blockquote cite="http://www.worldwildlife.org/who/index.html">-->
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+
+<!--<details>:specifies addtional details that user can view or hide 
+               <summary> embedded in <details> show a visible heading for the details-->
+<details>
+  <summary>Copyright 1999-2014.</summary>
+  <p> - by Refsnes Data. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>     
+
+
+<!--inline tags-->
+<!--
+<span>
+<cite>:easier for people to search the code 
+<abbr>:when hoveriing over show the abbreviation 
+<time>: defines time and date
+<code>:defines computer code
+<sub> and <sup>: for mathematical formulas-->
+    
+<!--tags need more-->
+<!--
+<button>
+<meter>:min,max,value
+<progress>
+<iframe>:often used to embed documents
+<bdo>:bidrection orientation,attribute dir="rtl" means right to left or "ltr"
+<map>:with <area>,creates clickable element in img,need JavaScript
+    

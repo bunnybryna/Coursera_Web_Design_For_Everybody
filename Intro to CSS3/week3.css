@@ -1,0 +1,83 @@
+/* pseudo classes
+ link-:link, :visited
+ user action-:hover, :active, :focus
+forms-:enabled, :checked, :disabled*/
+p:hover{
+    border: 1px solid #000000;
+}
+/*structrual 
+:first-child, :last-child, :nth-child(), :only-child
+:first-of-type,:last-of-type, :only-of-type
+only-of-type vs only-of-child: similar
+difference: child will consider its all siblings, type will only consider same type
+selector matches every element that is the only child of its type, of its parent*/
+li: first-child{}
+li: nth-child(4){}
+p: empty{}
+img: only-of-type{}
+/* textual:first-letter, :first-line;
+positional: before, :after;
+fragments: :: selection
+
+transitions: make animations
+transition-property: size, color, position, etc
+transition-duration: how long
+transition-timing: smooth transition? linear
+transition-delay: how long should the wait be */
+div{
+    color: #000000;
+    background: #2DB34A;
+    line-height: 200px;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 6px;
+    transition-property: color, width, background, border-radius;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+    
+}
+
+div: hover{
+    color: #FFFFFF;
+    width: 350px;
+    background: #2D31B3;
+    border-radius: 50%;
+}
+/*shorthands:
+transition: background .2s linear border-radius 1s ease-in 1s;*/
+
+/*transform
+2D: translate, roate, scale, skew, matrix
+translate: positive moves to right and down
+rotate: only see the result
+(360deg = 400grad = 6.28rad = 1turn)
+scale: 2 times width, 3 times height
+skew: (x-angle, y-angle)
+matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()):too confusing, avoid*/
+transform: translate(100,75);
+transform: rotate(30deg);
+transform: scale(2,3);
+transform: skew(30deg, 15deg)
+/*3D: 
+transform:rotateX(deg), rotateY(deg), rotateZ(deg)
+or transform: rotate3d(x,y,z) 
+Note that vertical Y axis in 3d is inverted. Positive values are down
+see https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/transforms/demo-rotate3d.html
+
+
+optional website:
+http://www.the-art-of-web.com/css/css-animation/
+http://learn.shayhowe.com/advanced-html-css/transitions-animations/
+http://tympanus.net/Tutorials/OriginalHoverEffects/index.html*/
+
+/*position:
+static, relative, absolute, fixed
+static: default, put in the next available position
+relative: relative to itself, take statice position, but add offsets
+(move things from where it would go)
+does not affect any other element, usually for containers or blocks
+absolute: other elements behave as if the element doesn't exist
+can end up top of another element
+fixed: relative to the browser window: like popup boxes that won't go away!*/

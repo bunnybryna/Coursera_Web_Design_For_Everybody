@@ -1,0 +1,18 @@
+h2{
+    text-align: center;
+}
+
+div{
+    background-color: #0000CC;
+    color: #ffffff;
+    box-sizing: border-box;
+    /*50% will not work, because there is padding, margin and border*/
+    width: 40%;
+    /*need inline-block to be next to each other*/
+    display: inline-block;
+    height: 200px;
+    margin: 5px;
+    border: 20px solid #000000;
+    padding: 15px;
+    margin-top: 50px;
+}

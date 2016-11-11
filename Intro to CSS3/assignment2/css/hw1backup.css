@@ -1,0 +1,79 @@
+/*my code will work best if you maximize your window
+Thanks!*/
+body{
+    padding: 5px;
+    margin: 10px;
+}
+header{
+    background-color: #999999;
+    /*have to go up to enter images folder*/
+    background-image:url("../images/flywheel.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*make the image covers the entire width*/
+    background-size: cover;
+
+}
+
+h1{
+    color:#FBFCFC;
+    /*make heading all in capital*/
+    text-transform: uppercase;
+    text-align: center;
+    font-size:30px;
+    padding-top:15px;
+}
+
+nav{
+    margin:0 65px;
+}
+nav a{
+    /*add round corners to the borders*/
+    border-radius: 5px;
+    margin: 20px 70px;
+    padding: 15px;
+    text-align: center;
+    /*remove the underline*/
+    text-decoration: none;
+    display: inline-block;
+    width: 10%;
+    /*use rgba to give a transparent bg color*/
+    background: rgba(255,255,255,0.2);
+}
+/*highlight the current page*/
+.active{
+    background: rgba(255,255,255,1); 
+}
+
+h2{
+    color: #000080;
+}
+
+.left{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    background-color: #006600;
+}
+
+aside a{
+    display: inline-block; 
+    margin: 10px 50px;
+}
+
+/*shrink imgs to a proper size and gives them borders*/
+aside a img{
+    display: inline-block;
+    width: 90%;
+    border: 2px solid #000000; 
+}
+
+.right{
+    display: inline-block;
+    color:#000000;
+    margin: 10px;
+    text-align:left;
+    display: inline-block;
+    float: right;
+    width:75%;      
+}

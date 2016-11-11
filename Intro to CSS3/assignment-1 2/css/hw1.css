@@ -1,0 +1,32 @@
+header{
+    background-color: #999999;
+}
+
+h1{
+    color:#FBFCFC;
+    /*make heading all in capital*/
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a{
+    background-color:#C0C0C0;
+    color:#000000;
+    text-align: center;
+}
+
+h2{
+    color: #000080;
+    text-transform: uppercase;
+}
+
+section{
+    background-color: #626567;
+    color:#000000;
+    text-align:left;
+}
+
+/* remove the pictures visually*/
+aside{
+    display: none;
+}

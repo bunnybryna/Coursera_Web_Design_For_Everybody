@@ -1,0 +1,76 @@
+body{
+    background: #B3B3B3;
+    font-size: 150%;
+    margin:4%; 
+}
+
+
+header{
+    background: #666666;
+    text-align: center;
+    padding: 15px;
+}
+
+/*the line is needed */
+header, footer{
+	background: #666666;
+	background: -moz-linear-gradient(top, #666666 0%, #00b7ea 100%);
+	background: -webkit-linear-gradient(#666666 0%, #00b7ea 100%);
+	background: -o-linear-gradient(#666666 0%, #00b7ea 100%);
+	background: linear-gradient(#666666 0%, #00b7ea 100%); 
+
+}
+h1{
+    color:#FFFFFF;
+}
+
+nav{
+    font-variant: small-caps;
+    font-size: 150%;
+    font-family: Arial, "Times New Roman", serif;
+}
+
+nav a{
+    width: 22%;
+    display: inline-block;
+    background:#FFFFFF;
+}
+
+h2{
+    color: #666666;
+    background:#00B4EA;
+}
+
+/*by default, section is a block
+* you want to use inlink-block to make them next to each other
+* and set the width (30%)and height
+better use %*/
+.half{
+    width: 45%;
+    display: inline-block;
+    /*make them all lined up at the top*/
+    float:left;
+    /*add space between elements*/
+    margin-right: 2%;
+}
+.whole{
+    clear:both;
+}
+details{
+    font-style: italic;
+}
+
+summary{
+    font-style: normal;
+}
+
+footer{
+    background: #6666666;
+    /*don't want section part float to the footer
+    make nothing next to the footer*/
+    clear:both;
+}
+
+img{
+    width: 75px;
+}

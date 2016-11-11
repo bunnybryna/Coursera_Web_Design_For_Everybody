@@ -1,0 +1,164 @@
+div{
+    border: solid 1px #CC00AA;
+}
+/* border: dotted, dashed, solid, double, groove, ridge, inset, outset, hidden
+thin, medium, large
+border-width: 1 value: all fourth sides;
+2 values: top&bottom and left&right;
+3 values: top, left&right, bottom;
+4 values: top, right, bottom, left;*/
+div{
+    border-width: 3px;
+    boder-width: 3px, 10px;
+    border-width: 3px 10px 20px;
+}
+/* margin: outside our border, between you and neighbor
+positive: element moves right/down;
+negative: element moves left/upward;
+
+padding: additional space between elements and its border
+positive: border moves outward from elements;
+negative: border moves over the element
+
+margin and padding: neither takes a color, always transparent
+padding is always same as the element
+margin is always same as the parent(body of the page)
+
+width=132px, height=82px, all adding up together
+or use border-box: width takes content, padding, and border into consideration
+
+margin: 0 auto;
+will center an element horizontally 
+when element must display: block;
+not float, fixed positive; width not auto
+
+absolute vs fluid:
+fluid: sets size relative to surrounding elements
+% vw vh(viewpoint width, viewpoint height)
+em and rem for font
+1 em is current size, 1 rem is current size of root element
+*/
+div{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+/*style links and lists
+get rid of underlines 
+text-decoration:none;
+don't make your links like buttons
+use <button>element instead*/
+/*a normal unvisited link*/
+a:link  
+/*has been visited*/
+a:visited  
+/*activated by holding your mouse over the link*/  
+a:hover       
+/*activated with keyboard tab*/    
+a:focus     
+/*is being clicked*/
+a:active    
+
+
+/*style lists*/
+list-style-type:
+ol: lower-roman, upper-roman, decimal, decimal-leading-zero,upper-alpha,lower-alpha,hebrew, armenian;
+ul: circle, disc, square;
+/*use a custom img 
+if you can't find the picture, go use square (as a backup)*/
+ul{
+   list-style-image: square url('icons.gif')
+}
+
+/*descendant selectors
+all the anchors inside a nav tag*/
+nav a{
+    
+}
+/*child selectors
+must be a child of the nav, directly underneath each other*/
+nav>a{
+    
+}
+/*adjacent sibling
+same level, follow each other
+general sibling selector: h1 ~ ol */
+h1 + ol{
+    
+}
+/*id selectors
+should be unique, used once*/
+#mainLogo{
+    
+}
+/*.class selectors
+select a group of elements
+use class combined with id*/
+.thumbs{
+    
+}
+/*all the p using class main*/
+p.main{
+    
+}
+
+/*narrow the scope
+p inside header and use special class*/
+header img.special{
+    
+}
+
+/*expand the scope
+rules apply to all of them*/
+p, h1, #main, .special{
+    
+}
+
+/*universal selector*/
+*{
+    
+}
+
+/*attribute selectors
+it will affect every link where you have href='info.html'*/
+a[href='info.html']
+/*^:match the beginning exactly*/
+a[href^='http://umich']
+/*$:match the end exactly*/
+img[src$='.png']
+/*:wildcard
+a links href contains unich*/
+a[href*='unich']
+
+/*shorthand rules:
+This rule sets:
+background-color
+background-image
+background-repeat, and
+background-position
+*/
+{
+background: #00ff00 url("imgs/ocean.jpg") no-repeat fixed center;
+}
+
+/*browser prefixes:
+-webkit-:Andriod, Chorme, IOS,Safari
+-moz-:Firefox
+-ms-:Internet Explorer
+-o-:Opera
+
+often unsupported properties:
+column-count
+border-radius
+gradient
+...
+*/
+
+section{
+	width:100%;
+	-webkit-column-count: 3;
+    -o-column-gap: 15px;
+	-moz-border-radius: 3;    

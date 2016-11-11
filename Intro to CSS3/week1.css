@@ -1,0 +1,107 @@
+/*selector{
+    property:value;}
+1. Internal style sheet
+defined within<head>
+Don't forget to close the style tag or you'll get blank page
+*/
+<head>
+    <meta charset="UTF-8">
+    <title>Title here</title>
+    <style>
+        h1{
+            color:blue;
+        }
+    </style>
+</head>    
+
+/*
+2. External style sheet
+a link to the style sheet in the head section
+applied to all elements in all files that links to the style sheet
+css folder is so important!*/
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/externalStyle.css"
+
+/*
+cascading order:browser default<external style sheet<internal<inline style
+rule precedence: the rules from the most recent/last one files,and the last rule it saw
+*/
+h1{
+    color:blue;
+    font-family:Arial;
+}
+/*This rule will apply*/
+h1{
+    font-family:Times;
+}
+/*override later rules using !important*/
+h1{
+    color:blue;
+    font-family:Arial !important;
+}
+h1{
+    font-family:Times;
+}
+
+
+/*Colors*/
+/*hexadecimal vs rgb
+rgba alpha transparency*/
+
+/*styling text*/
+/*font-family
+give alternatives*/
+h1{
+    font-family:Arial;
+}
+h1{
+    font-family:Courier, Impact, Arial;
+}
+/* to expand beyond web-safe fonts,
+you need font-face rule*/
+@font-face{
+    font-family:mySpecialFont;
+    src:url('Colleen.ttf');
+}
+h1{
+    font-family:mySpecialFont;
+}
+
+/*font-style:
+normal,italic,oblique*/
+
+/*font-variant:
+normal,small-caps*/
+
+/*font-size:
+percentages*/
+
+/*background-color:
+block element:covers the whole width of the page 
+inline element: covers the element itself*/
+
+/*text-align:
+left,right,center,justfy*/
+
+/*line-height:
+adjust the space between lines*/
+h1{
+    line-height:50%;
+}
+
+/*inline:takes up “just enough” width and height
+block:all width and enough height, rules can set height and width
+inline-block: same as inline, but rules can set
+none: visually removed from page
+*/
+
+/* float: right,left
+not overlap
+clear: left, right, both*/
+
+/* overflow:content doesn't fit set height/width
+visible
+hidden
+scroll
+auto
+change display: to table-cell

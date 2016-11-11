@@ -1,0 +1,143 @@
+/*my code will work best if you maximize your window
+Thanks!*/
+body{
+    padding: 5px;
+    margin: 10px;
+}
+header{
+    background-color: #999999;
+    /*have to go up to enter images folder*/
+    background-image:url("../images/flywheel.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*make the image covers the entire width*/
+    background-size: cover;
+
+}
+
+h1{
+    color:#FBFCFC;
+    /*make heading all in capital*/
+    text-transform: uppercase;
+    text-align: center;
+    font-size:30px;
+    padding-top:15px;
+}
+
+nav{
+    margin:0 65px;
+}
+nav a{
+    /*add round corners to the borders*/
+    border-radius: 5px;
+    margin: 20px 70px;
+    padding: 15px;
+    text-align: center;
+    /*remove the underline*/
+    text-decoration: none;
+    display: inline-block;
+    width: 10%;
+    /*use rgba to give a transparent bg color*/
+    background: rgba(255,255,255,0.2);
+}
+/*highlight the current page*/
+.active{
+    background: rgba(255,255,255,1); 
+}
+
+h2{
+    color: #000080;
+}
+
+.left{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    background-color: #006600;
+}
+
+aside a{
+    display: inline-block; 
+    margin: 10px 50px;
+}
+
+/*shrink imgs to a proper size and gives them borders*/
+aside a img{
+    display: inline-block;
+    width: 90%;
+    border: 2px solid #000000; 
+    margin-bottom: 10px;
+}
+
+
+aside a:first-of-type{
+    margin-top:25px;
+}
+
+aside a:last-of-type{
+    margin-bottom:200px;
+}
+
+.right{
+    display: inline-block;
+    color:#000000;
+    margin: 10px;
+    text-align:left;
+    display: inline-block;
+    float: right;
+    width:75%;      
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /*make the table cell less crowded */
+    line-height:30px;
+    width: 75%;
+    /*center the table*/
+    margin: 20px 20px 20px 100px;
+}
+
+th{
+    background-color: #006600;
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#006600, #68F442); 
+    /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(#006600, #68F442); 
+    background: linear-gradient(#006600, #68F442);  
+    /*only top two corners rounded*/
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    border:1px solid #006600;
+    /*thicker bottom border*/
+    border-bottom: 3px solid #006600;
+    color:#FFFFFF;
+    padding-left:10px; 
+    /*the other two columns center-aligned*/
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    /*use text-shadow to create shadows*/
+    text-shadow: 1px 1px;
+    background-color: #BADA55;
+    padding-left: 10px;
+    /*so when hovered change to 1*/
+    opacity: 0.6;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/*first column left-aligned*/
+th:first-of-type,td:first-of-type{
+    text-align: left;
+}
+
+td:hover{
+    opacity: 1;
+}
+

@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="style.css" media="screen"/>
+<link rel="stylesheet" href="print.css" media="print"/>
+<!--with CSS3, style can depend on more features:
+width, height, orientation, resolution, Boolean operators
+two query components:
+1.a media type: screen ,print, all
+2.trigger size
+eg: screen and (max-device-width: 480px) and (resolution: 163dpi)
+
+how to implement media queries:
+1. use @import rule
+@import url(smallstyle.css)screen and (min-width:600px)
+2. put media query directly in the style sheet
+@media screen and (min-width:500px){..}
+3. include in the head
+<link rel="stylesheet" media="screen and (min-width:400px)"> and (orientation:portrait)>
+-->
+@media screen and (min-width:500px){
+p.desc{
+    display:block;
+    font-size:150%;}
+}
+
+@media screen and (min-width:900px){
+p.desc{
+    display:inline-block;
+    width:35%;
+    font-size:125%;}
+}
+
+<!--breakpoints
+iPhone 5: 320, 568px
+iPhone 6: 375, 667px;
+iPhone 6+:414, 736px;
+Galaxy S5: 360, 640px;
+
+media queries:
+1. grab information
+<meta name='viewpoint' content='width=device-width, initial-scale=1'>
+easily misused content='width=device-width, initial-scale=1, maximum-scale=1' will disllow zooming
+2. fluid layout
+use ems and %
+%=>div and img, em=>typography
+padding, margins affected by width, not height
+3. media queries
+display none still get downloaded, can affect performance
+from top to bottom, default to bigger screen, if using min-width
+but if max-width, from bottom to top 
+-->
+<style>
+body{
+    backgrond:green;}
+    
+@media only screen and (min-width: 780px){
+    body{background:yellow;}
+}
+
+@media only screen and (min-width:1024px){
+    body{background:blue;}
+}
+</style>

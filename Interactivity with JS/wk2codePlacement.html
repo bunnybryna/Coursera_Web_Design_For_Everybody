@@ -1,0 +1,64 @@
+<!--JS functions declared in the head
+use the script tag, have access to all of the documents info-->
+<head>
+    <script>
+    function message(){
+        alert("This alert box was called with the onload event");
+    }
+    </script>
+</head>
+<body>
+        <h1>Functions</h1>
+        <script>
+            message();
+        </script>
+</body>
+
+<!--JS functions in an external file
+don't use the script tag-->
+<head>
+    <script src="js/two-external.js"></script>
+</head>
+<body>
+    <h1>Functions</h1>
+    <script>
+        message();
+    </script>
+</body>
+
+<!--linking from a html file-->
+<link rel="stylesheet" href="css.style.css">
+<script "js/javaFunctions.js"></script>
+<img src="images/myPicture.jpg"/>
+<!--but linking from a style sheet, you have to go up one folder
+background: url("../images/holiday.png");-->    
+
+<!--debugging for links:
+1. check spellings, case matters
+2. check if folder correct
+3. check if you're working on a copy-->
+
+<!--events:
+Mouse events:
+onclick
+onmouseover
+ondblclick(double click)
+onmousedown
+onmouseenter
+onmouseleave
+onmousemove
+onmouseout
+
+Keboard events:
+onkeydown,onkeypress,onkeyup
+
+Frame events:
+onscroll
+onresize
+onload
+onerror
+-->
+<div onclick="message()">Clicking on this Div will invoke a JS function</div>
+<!--put functions inside quotes
+recommend to use double quotes, so you can pass single quotes strings-->
+<div onclick="message('Hi')">

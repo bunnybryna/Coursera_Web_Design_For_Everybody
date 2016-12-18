@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Forms</title>
+  </head>
+  <body>
+<!--HTML form tags-->
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br/>
+        <!--another way of linking label and input-->
+        <label>Email:<input type="email" name="email"></label><br/>
+        <label for="birth">Birth</label>
+        <!--built-in calendar using Chrome-->
+        <input type="date" id="birth" value="birth"></br>
+        <input type="submit" value="Click Here">
+        <!--notice that all types are different, they create different data types-->
+
+    </form>   
+   </body>
+</html>
+
+<!--form elements have attributes:type, name, id;
+input types: common: textfield, email, password, radiobutton, checkbox, submit;
+             more: number, range, color, date, url;(restriction)
+name: every one input should have a name
+value: button=>value is the text inside the button;textfield provides a default
+placeholder:suggestion -->
+
+<!--simple validation
+what to validate: type, format, value
+how: 1. new HTML input types: will find the first that doesn't match the rules
+     2. input attributes: 
+     --required
+     <form novalidate> will ignore all required attibutes
+     --pattern: works with input="text"
+     [0-9]{13-16} means only number, have 13-16 digits, credit cards
+     [a-zA-Z] means upper/lowercase letters, at least one character
+     best use placeholder
+     --limiting numbers: min, max, step(means increment), range
+when: oninput, onchange(better)

@@ -1,0 +1,39 @@
+
+main{
+    background-color: #281200;
+}
+
+#enlarge{
+    display: inline-block;
+    width: 100%;
+    line-height: 35vw;
+    height: 35vw;
+    color: #FFD941;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    background-image: "none";
+    background-size: 100% 100%;
+    text-align: center;
+    border-radius: 20px;    
+}
+
+#details{
+    color: #B55200;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 2em;
+    padding-top: 9vw;
+}
+
+.preview{
+    width: 100%;
+    border-radius: 20px;    
+}
+
+#menuPicGroup{
+    padding: 2vw 0 2vw 0;
+    border: #B55200;
+}
+
+#menuDetail div{
+    display: none;
+}

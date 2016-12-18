@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Changing style</title>
+    <!--<link rel="stylesheet"  type="text/css" href="css/eventStyle.css"-->
+    <style>
+        .close{
+            display: none;
+        }
+        .open{
+            display: block;
+        }
+        button{
+            width: 150px;
+            background-color: #00CCEE;
+            margin-left: 15px;
+            font-size: 120%;
+        }
+        
+        #demo{
+            color: white;
+            background-color: #7F7F7F;
+            padding: 10px;
+        }
+        
+    </style>
+    <script>
+    function closeMe(){
+        x=document.getElementById("demo");
+        <!--option1:change the style attribute directly-->
+        <!--x.style.display ="none";-->
+        <!--option2:change the class, when you wanna change a lot of style attributes together--> 
+        x.className="close";
+    }
+    function openMe(){
+        x=document.getElementById("demo");
+        <!--x.style.display="block";-->
+        x.className="open";
+    }
+    </script>
+</head>
+<body>
+    <h1>Chaning the Style</h1>
+    <p>JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="openMe()">Open!</button>
+    <button type="button" onclick="closeMe()">Close!</button>
+    <p id="demo">Extra details...You can open and close this paragraph using the buttons above.</p>
+</body>
+</html>    

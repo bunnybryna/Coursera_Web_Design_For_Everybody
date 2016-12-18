@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Menu</title>
+       <link rel="icon" type="image/png" href="img/logosm.png"/>
+    <!-- linking to Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--linking to my own css-->
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <!--linking to my own js-->
+    <script src = "js/menu.js"></script>
+</head>
+<body>
+
+<main>    
+<div class="container" id="menuPicGroup">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="hidden-sm hidden-xs" id="enlarge">
+                Hover over an image below to display menu
+            </div>
+        </div>    
+        <div class="col-md-4">
+            <div id="details">
+            </div>
+        </div>    
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <img class = "preview" src="img/chocoDonut.jpg" alt="chocolate donuts" onmouseover="upDate(this,'regular')">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class = "preview" src="img/moreDonuts.jpg" alt="all kinds of donuts" onmouseover="upDate(this,'fancy')">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class = "preview" src="img/creamHorn.jpg" alt="cream horns on the plate" onmouseover="upDate(this,'topSeller')">
+        </div>    
+        <div class="col-sm-6 col-md-3">
+            <img class = "preview" src="img/coffeeMenu1.jpg" alt="class coffee" onmouseover="upDate(this,'coffeeList')">        
+        </div>
+    </div>
+    <div id="menuDetail">
+        <div id="regular">
+            Regular donuts: <br>chocolate frosted, vanilla frosted, sugar raised, plain donut, plain cruller, honey wheat, jelly puff, cream puff, coffee roll	 
+        </div>
+        <div id="fancy">
+            Fancy donuts: <br>bow tie, éclair, apple turnover, fancy coffee roll,boston cream, jelly filled, cream filled, glazed, chocolate glazed, marble twist, 	 
+        </div>
+        <div id="topSeller">
+            Top sellers:<br>pistachio pinwheels, Boston cream delights, chocolate confetti, marshmallow mayhems, French twists, bulls horns, cream horns
+        </div>        
+        <div id="coffeeList">
+            Beverage:<br>expresso, macchiato, cappucino, flat white, americano, latte, milk tea, hot chocolate, red eye, iced coffee, iced tea, masala chai;
+    </div>
+</div>
+</main>    
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>	

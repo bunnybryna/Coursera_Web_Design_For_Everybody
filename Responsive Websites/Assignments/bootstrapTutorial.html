@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--tell IE to use the latest rendering engine-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--set the page to the width of the device and set the zoom level to 1-->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Bootstrap Tutorial</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ 
+<style>
+.jumbotron{
+    background-color:#2E2D88;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+<!--container-fluid provides a full width container, spanning the entire width of the viewport-->
+<div class="container">
+<!--page-header adds a horizontal line under the heading (+ adds some extra space around the element)-->
+<div class="page-header">
+<h1>Bootstrap Tutorial</h1>
+</div>
+<!--Place the jumbotron outside the <div class="container"> 
+if you want the jumbotron to extend to the screen edges-->
+<div class="jumbotron">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>
+        <a href="#" class="btn btn-default btn-lg" role="button">More Info</a>
+        <button type="submit" class="btn btn-danger" role="button">Button</button>
+        <input type="button" value="Info" class="btn btn-info">
+        <button type="submit" class = "btn-primary btn-sm">Primary</button>
+        <button type="submit" class = "btn btn-success btn-xs">Success</button>
+        <button type="submit" class = "btn btn-warning btn-lg">Warning</button>
+        <button type="submit" class = "btn btn-link btn-lg">Link</button>
+        <!--you can disable button with disabled-->
+        <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary</button>
+        <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+        <div class="btn-group btn-group-lg" role="group">
+             <button type="button" class="btn btn-default">Small</button>
+             <button type="button" class="btn btn-default">Medium</button>
+             <button type="button" class="btn btn-default">Large</button>
+        </div>     
+    </p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-cs-12">
+            <h4>Column 1</h4>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-cs-12">
+            <h4>Column 2</h4>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <!-- to fix the problem: column 1 is longer than the other-->        
+        <div class="clearfix visible-sm"></div>        
+        <div class="col-lg-3 col-md-3 col-sm-6 col-cs-12">
+            <h4>Column 3</h4>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-cs-12">
+            <h4>Column 4</h4>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>        
+    </div>
+    <div class="row">
+        <!--collapse: hide; collapse in: show;doesn't work!-->
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+            <h4><a href="#Col1Content" data-toggle="collapse">Column1</a></h4>
+            <div id="Col1Content" class="collapse in">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+            <h4><a href="#Col2Content" data-toggle="collapse">Column2</a></h4>
+            <div id="Col2Content" class="collapse">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h4><a href="#Col3Content" data-toggle="collapse">Column3</a></h4>
+            <div id="Col3Content" class="collapse">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+        </div>        
+    </div>   
+</div>    
+
+<div class="container">
+  <div class="row">
+  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+ 
+      <!-- We can collapse or hide data on the screen -->
+      <h4><a href="#col1Content" data-toggle="collapse">Column 1</a></h4>
+ 
+      <!-- With collapse in this div shows on load -->
+      <div id="col1Content" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla at libero at finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci.</div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+      <h4><a href="#col2Content" data-toggle="collapse">Column 2</a></h4>
+ 
+      <!-- With class collapse this div won't show on load -->
+      <div id="col2Content" class="collapse">Quisque rutrum augue odio, eu placerat diam bibendum id. Donec at fringilla leo, non varius magna. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci, a pretium justo nulla sit amet nunc. Class aptent taciti sociosqu ad litora torquent per conubia.</div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <h4><a href="#col3Content" data-toggle="collapse">Column 3</a></h4>
+      <div id="col3Content" class="collapse">Pellentesque vulputate faucibus leo, non blandit ante faucibus maximus. Nunc non neque laoreet, tincidunt nisl et, tristique odio. Nullam imperdiet sollicitudin neque malesuada ornare. Curabitur ultrices urna id gravida lacinia. Nunc eu neque vitae nisi luctus rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac.</div>
+    </div>
+  </div>
+</div><br>
+
+<!--17:00
+well
+
+table
+
+jambotron
+
+carousel 
+
+icons: envelop, phone, globe
+
+well
+
+img-responsive!
+
+text-color
+
+dropdown
+
+input group
+
+nava=bar
+51
+
+-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
